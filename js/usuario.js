@@ -1,5 +1,6 @@
 
-""
+
+limpiarCampos()
 
 function guardarUsuario() {
     let nombre = document.getElementById("nombre");
@@ -30,7 +31,6 @@ function guardarUsuario() {
         Swal.fire({
             icon: 'success',
             title: 'Te registraste exitosamente',
-            iconColor: '#fad8ce',
             customClass: {
                 confirmButton: 'btn_5',
             }
