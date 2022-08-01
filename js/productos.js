@@ -2,25 +2,25 @@ const productos = [{
     id: 1,
     nombre: 'Lampara Gato',
     valor: 2798,
-    imageURL: '//assets/imagenes/lamparaGato.jpeg',
+    imageURL: '../assets/imagenes/lamparaGato.jpeg',
 },
 {
     id: 2,
     nombre: 'Maquillaje',
     valor: 2998,
-    imageURL: '//assets/imagenes/maquillaje.jpeg',
+    imageURL: '../assets/imagenes/maquillaje.jpeg',
 },
 {
     id: 3,
     nombre: 'Mochila Chimola',
     valor: 6198,
-    imageURL: '//assets/imagenes/mochilaChimo.jpeg',
+    imageURL: '../assets/imagenes/mochilaChimo.jpeg',
 },
 {
     id: 4,
     nombre: 'Vaso Unicornio',
     valor: 5298,
-    imageURL: '//assets/imagenes/vaso uni.jpeg',
+    imageURL: '../assets/imagenes/vaso uni.jpeg',
 },
 ];
 
