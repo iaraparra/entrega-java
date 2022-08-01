@@ -1,0 +1,29 @@
+[
+    { "id": 1, 
+    "nombre": "Lampara Gato", 
+    "precio": 2798, 
+    "imageURL": "lamparaGato.jpeg",
+    "cantidad" : 8
+},
+{
+    "id" : 2,
+    "nombre" : "Maquillaje",
+    "precio" : 2998,
+    "imageURL": "maquillaje.jpeg",
+    "cantidad" : 4
+},
+{
+    "id" : 3,
+    "nombre" : "Mochila Chimola",
+    "precio" : 6198,
+    "imageURL": "mochilaChimo.jpeg",
+    "cantidad" : 1
+},
+{
+    "id" : 4,
+    "nombre" : "Vaso Unicornio",
+    "precio" : 5298,
+    "imageURL": "vaso uni.jpeg",
+    "cantidad" : 3
+}
+]
