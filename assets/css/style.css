@@ -43,6 +43,7 @@
 
 .imagenProducto {
   width: 270px;
+  border-radius: 7px;
 }
 
 .card-header {
