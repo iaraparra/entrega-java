@@ -38,7 +38,6 @@ function agregarCarrito(id){
   if(pos > -1){
     productos_carrito[pos].cantidad += 1;
   }else {
-    let producto = buscarProducto(id);
     producto.cantidad = 1;
     productos_carrito.push(producto);
   }

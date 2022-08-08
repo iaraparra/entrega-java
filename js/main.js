@@ -1,4 +1,4 @@
-
+/* 
 function renderProductosHTML(){
     let productos = obtenerProductosLS();
     let contenido = "";
@@ -24,9 +24,9 @@ function renderProductosHTML(){
   function renderProductosDOM(){
   };
   
-  
+ 
+  renderProductosHTML(); */
+ 
   guardarProductosLS(productos);
   actualizarBotonCarrito();
-  renderProductosHTML();
-
   

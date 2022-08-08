@@ -46,7 +46,7 @@ fetch("js/productos.json")
     .then((response) => response.json())
     .then((data) => {
         const productos = document.getElementById("productos");
-        data.forEach(valor => {
+        data.forEach(prod => {
             let columna = document.createElement("div");
             columna.className = "col-md-3";
             let div_padre = document.createElement("div");
@@ -57,8 +57,8 @@ fetch("js/productos.json")
             div_hijo2.className = "card-body";
             
             let imagen = document.createElement("img");
-            imagen.src = "assets/imagenes/" + valor.imageURL;
-            imagen.alt = valor.nombre;
+            imagen.src = "assets/imagenes/" + prod.imageURL;
+            imagen.alt = prod.nombre;
             imagen.className = "imagenProducto"
 
             /* <button ref=${producto.id} class="btn btn_purple button boton" title="Agregar al Carrito" onclick="agregarCarrito(${producto.id})">Comprar</a> */
@@ -68,11 +68,11 @@ fetch("js/productos.json")
             botonComprar.className = "botonAgregar";
             botonComprar.textContent = "Agregar al Carrito";
             botonComprar.onclick = function() {
-                agregarCarrito(valor.id)
+                agregarCarrito(prod)
                 };
 
 
-            div_hijo1.innerHTML = `<b>${valor.nombre} </b> <br>$${valor.precio}`;
+            div_hijo1.innerHTML = `<b>${prod.nombre} </b> <br>$${prod.precio}`;
         
             divBoton.appendChild(botonComprar);
             div_hijo2.appendChild(imagen);
