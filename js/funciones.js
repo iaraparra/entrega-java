@@ -33,13 +33,13 @@ function vaciarCarrito(){
 
 function agregarCarrito(id){
   let productos_carrito = obtenerProductosCarrito();
-  let pos = productos_carrito.findIndex(x => x.id == id)
+  let pos = productos_carrito.findIndex(x => x.id == productos.id)
 
   if(pos > -1){
     productos_carrito[pos].cantidad += 1;
   }else {
-    producto.cantidad = 1;
-    productos_carrito.push(producto);
+    productos.cantidad = 1;
+    productos_carrito.push(productos);
   }
 
   guardarProductosCarrito(productos_carrito);
@@ -51,9 +51,7 @@ function eliminarCarrito(id){
   let pos = productos_carrito.findIndex(x => x.id == id)
 productos_carrito[pos].cantidad -=1;
 
-if (productos_carrito[pos].cantidad == 0){
-  productos_carrito.splice(pos, 1);
-}
+productos_carrito[pos].cantidad == 0 && productos_carrito.splice(pos, 1);
 
 
   guardarProductosCarrito(productos_carrito);
