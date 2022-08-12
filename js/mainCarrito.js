@@ -18,12 +18,15 @@ function renderProductosCarrito() {
         let total =0;
   
       for (let producto of productos) {
-        let valor = producto.valor * producto.cantidad;
+        let valor = producto.precio * producto.cantidad;
+      
         contenido += ` <tr>
-          <td><img src="${producto.imageURL}" alt="${producto.nombre}" width="64"></td>
-          <td class="align-middle">${producto.nombre} X ${producto.cantidad}</td>
+          <td><img src=" assets/imagenes/${producto.imageURL}" alt="${producto.nombre}" width="64"></td>
+          <td class="align-middle">${producto.nombre}</td>
+          <td class="align-middle"><b>${producto.cantidad}</b></td>
+          <td class="align-middle">$${producto.precio}</td>
           <td class="align-middle"><b>$${valor}</b></td>
-          <td class="text-end"><a href="#" class="btn btn button" onclick="eliminarCarrito(${producto.id})" ><img src="assets/imagenes/delete.png" width="24"></a> </td>
+          <td class="align-end text-end"><a href="#" class="btn btn button" onclick="eliminarCarrito(${producto.id})" ><img src="assets/imagenes/delete.png" width="24"></a> </td>
           </tr>`;
           total += valor;
   

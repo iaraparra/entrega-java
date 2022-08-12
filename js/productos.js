@@ -80,6 +80,6 @@ fetch("js/productos.json")
             div_padre.appendChild(div_hijo1);
             div_padre.appendChild(div_hijo2);
             columna.appendChild(div_padre);
-            productos.appendChild(columna);
+           productos.appendChild(columna);
         });
     })
