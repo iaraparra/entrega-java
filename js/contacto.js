@@ -5,7 +5,7 @@ enviarForm.onclick = function () {
   consultaExitosa();
 };
 
-/* enviarForm.addEventListener('submit', consultaExitosa()) */
+/* enviarForm.addEventListener('submit', consultaExitosa()); */
 
 function consultaExitosa() {
   Swal.fire({
@@ -14,6 +14,6 @@ function consultaExitosa() {
     title: 'Su consulta ha sido enviada',
     text: 'Nos comunicaremos en breve',
     showConfirmButton: true,
-    // timer: 500
+    // timer: 1500
   })
 };
