@@ -18,6 +18,9 @@
   height: 180px;
 }
 
+#productos{
+  margin-top: 50px;
+}
 .botonFooter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +51,7 @@
 
 .card-header {
   text-align: center;
+  background-color: #dcc1d5;
 }
 
 .botonAgregar {

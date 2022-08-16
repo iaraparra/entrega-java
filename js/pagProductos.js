@@ -13,7 +13,7 @@ fetch("js/productos.json")
     .then((data) => {
         const productos = document.getElementById("productos");
         data.forEach(prod => {
-            if (prod.categoria == 1){
+
             let columna = document.createElement("div");
             columna.className = "col-md-3";
             let div_padre = document.createElement("div");
@@ -47,6 +47,6 @@ fetch("js/productos.json")
             div_padre.appendChild(div_hijo2);
             columna.appendChild(div_padre);
            productos.appendChild(columna);
-        }
+        
         });
     })

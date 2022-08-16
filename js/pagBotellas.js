@@ -8,12 +8,12 @@ function guardarProductosLS(productos) {
 }
 
 
-fetch("js/productos.json")
+fetch("./js/productos.json")
     .then((response) => response.json())
     .then((data) => {
         const productos = document.getElementById("productos");
         data.forEach(prod => {
-            if (prod.categoria == 1){
+            if (prod.categoria == 3){
             let columna = document.createElement("div");
             columna.className = "col-md-3";
             let div_padre = document.createElement("div");
@@ -47,6 +47,6 @@ fetch("js/productos.json")
             div_padre.appendChild(div_hijo2);
             columna.appendChild(div_padre);
            productos.appendChild(columna);
-        }
+            }
         });
     })
