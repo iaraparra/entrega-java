@@ -1,5 +1,9 @@
-const enviarForm = document.getElementById("enviarConsulta");
-enviarForm.addEventListener(consultaExitosa());
+const enviarForm = document.getElementById("button");
+
+
+enviarForm.onclick = function () {
+  consultaExitosa();
+};
 
 function consultaExitosa() {
   Swal.fire({
@@ -8,6 +12,6 @@ function consultaExitosa() {
     title: 'Su consulta ha sido enviada',
     text: 'Nos comunicaremos en breve',
     showConfirmButton: false,
-    timer: 2000
+    timer: 500
   })
 }
